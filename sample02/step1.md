@@ -1,3 +1,9 @@
+Run the command to change hostname:
+
+`hostname <YOUR_HOST_NAME>`
+
+Run the command `hostname` to confirm that the hostname was changed.
+
 Use our easy one-step install.
 
 `DD_AGENT_MAJOR_VERSION=7 DD_API_KEY=<YOUR_API_KEY> DD_SITE="datadoghq.com" bash -c "$(curl -L https://s3.amazonaws.com/dd-agent/scripts/install_script.sh)"`
