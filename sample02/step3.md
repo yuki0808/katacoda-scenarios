@@ -1,13 +1,30 @@
+## APMのセットアップ（Python）
 
 
+以下コマンドを実行し、Flaskモジュールをインストール。
 `pip install flask`{{execute}}
 
-run.py
+以下コマンドを実行し、Pythonファイルを作成
+`touch run.py`{{execute}}
+
+作成した上記ファイルをKatakoda Editorから選択肢以下の
 
 ```
 from flask import Flask
+import logging
+import logging.handlers
+
 app = Flask(__name__)
- 
+
+handler = logging.handlers.RotatingFileHandler(
+        'log.txt',
+        maxBytes=1024 * 1024)
+logging.getLogger('werkzeug').setLevel(logging.DEBUG)
+logging.getLogger('werkzeug').addHandler(handler)
+app.logger.setLevel(logging.WARNING)
+app.logger.addHandler(handler) 
+
+
 @app.route('/')
 def hello_world():
     return '<html><body><h1>Hello world!</h1></body></html>'
@@ -16,8 +33,10 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
 ```
 
+Tracerをインストール
 `pip install ddtrace`{{execute}}
 
+Webアプリケーションの起動
 `ddtrace-run /usr/bin/python3 run.py`{{execute}}
 
 Terminalの+ボタンを押下し、`Select port to view on Host 1`を選択
