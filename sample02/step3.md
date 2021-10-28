@@ -1,13 +1,12 @@
 ## APMのセットアップ（Python）
 
-
 以下コマンドを実行し、Flaskモジュールをインストール。
 `pip install flask`{{execute}}
 
 以下コマンドを実行し、Pythonファイルを作成
 `touch run.py`{{execute}}
 
-作成した上記ファイルをKatakoda Editorから選択肢以下の
+作成した上記ファイルをKatakoda Editorから選択し以下の内容を貼り付けて保存する。
 
 ```
 from flask import Flask
@@ -17,7 +16,7 @@ import logging.handlers
 app = Flask(__name__)
 
 handler = logging.handlers.RotatingFileHandler(
-        'log.txt',
+        '/var/log/log.txt',
         maxBytes=1024 * 1024)
 logging.getLogger('werkzeug').setLevel(logging.DEBUG)
 logging.getLogger('werkzeug').addHandler(handler)

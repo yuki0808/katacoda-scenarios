@@ -13,14 +13,13 @@ Agentが正しく実行されているか以下のコマンドをTerminalで実�
 
 ![](https://p-qkfgo2.t2.n0.cdn.getcloudapp.com/items/7KuALjxe/46ddd4f7-27c0-4b86-86f9-5bd7859f82c9.jpg?v=abbc9a0dae56a83d34d3327e36c9fbd6)
 
-以下例では、ホストを環境ごとに区別させるために`environment:test`といったタグを追加。
+以下例では、`env:test`といった環境用のタグを追加。
 
-![](https://p-qkfgo2.t2.n0.cdn.getcloudapp.com/items/GGu4RJ0z/977413c2-4926-47b9-87f8-82f769046948.jpg?v=fe986a7b3b3768b8a8bd16da725de2f8)
+![](https://p-qkfgo2.t2.n0.cdn.getcloudapp.com/items/WnukJ6Zq/5e42526c-92cd-4145-b970-cd46973dfbe7.jpg?v=757b9cda1111cb0beab6c085f8e3f74f)
 
 
 以下のコマンドを実行し、Agentの再起動を行い設定を反映させる。
 `sudo service datadog-agent restart`{{execute}}
-
 
 Datadogの以下の画面(Host map)にアクセスしAgentをインストールしたホストの情報が表示されているか確認。
 
