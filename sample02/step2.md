@@ -1,5 +1,29 @@
-Agentが正しく実行されているか以下のコマンドを実行。
+## Agentの操作
+
+Agentが正しく実行されているか以下のコマンドをTerminalで実行。
+本コマンドを実行することでDatadogのAgentやインテグレーションのステータスの確認が可能。
 
 `sudo datadog-agent status`{{execute}}
 
-このコマンドを実行することでDatadogのAgentやインテグレーションのステータスの確認が可能。
+
+以下のコマンドを実行し、Agentのコンフィグファイルを開き、ホストに任意のタグ情報を付与。
+`vi /etc/datadog-agent/datadog.yaml`{{execute}}
+
+コンフィグファイル内にタグを設定する項目があるので、その箇所に任意のタグ情報を追加する。
+
+![](https://p-qkfgo2.t2.n0.cdn.getcloudapp.com/items/7KuALjxe/46ddd4f7-27c0-4b86-86f9-5bd7859f82c9.jpg?v=abbc9a0dae56a83d34d3327e36c9fbd6)
+
+以下例では、ホストを環境ごとに区別させるために`environment:test`といったタグを追加。
+
+![](https://p-qkfgo2.t2.n0.cdn.getcloudapp.com/items/GGu4RJ0z/977413c2-4926-47b9-87f8-82f769046948.jpg?v=fe986a7b3b3768b8a8bd16da725de2f8)
+
+
+以下のコマンドを実行し、Agentの再起動を行い設定を反映させる。
+`sudo service datadog-agent restart`{{execute}}
+
+
+Datadogの以下の画面(Host map)にアクセスしAgentをインストールしたホストの情報が表示されているか確認。
+
+https://app.datadoghq.com/infrastructure/map
+
+![](https://p-qkfgo2.t2.n0.cdn.getcloudapp.com/items/RBuEOBXB/23e0ccd8-b128-4429-bf06-40c1da1f5549.jpg?v=d2d9cffe60ecd06af24b3364f13a7668)

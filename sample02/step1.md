@@ -6,9 +6,10 @@
 
 `hostname`コマンドを実行して、ホスト名が変更されたか確認してください。
 
-以下のワンライナーコマンドを実行してAgentインストール。
+次に、Datadog上の以下のURLにアクセスし、`① Use our easy one-step install.` 欄に表示されているワンライナーのインストールコマンドをTerminalで実行し、Agentをインストールする。
 
-`DD_AGENT_MAJOR_VERSION=7 DD_API_KEY=<YOUR_API_KEY> DD_SITE="datadoghq.com" bash -c "$(curl -L https://s3.amazonaws.com/dd-agent/scripts/install_script.sh)"`
+https://app.datadoghq.com/account/settings#agent/ubuntu
 
-これにより、Datadog Agent用のAPTパッケージがインストールされ、パスワードの入力を求められます。
-エージェントがまだマシンにインストールされておらず、インストール後に自動的に起動させたくない場合は、上記のスクリプトの前に DD_INSTALL_ONLY=true を付けてから実行してください。
+![](https://p-qkfgo2.t2.n0.cdn.getcloudapp.com/items/kpu6bWen/48a6aa57-2b33-48dd-8457-42fc4473552e.jpg?v=f871f93c07115e68af3b8dc7b02db702)
+
+上記を実行されることによって、Datadog Agent用のAPTパッケージがインストールされます。
