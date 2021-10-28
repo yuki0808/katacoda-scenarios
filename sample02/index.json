@@ -1,8 +1,8 @@
 {
   "title": "初めてのDatadog",
-  "description": "10分でできる、Datadogのセットアップ。",
+  "description": "15分でできる、Datadogのセットアップ。",
   "difficulty": "Beginner",
-  "time": "10m",
+  "time": "15m",
   "details": {
     "steps": [
       {
