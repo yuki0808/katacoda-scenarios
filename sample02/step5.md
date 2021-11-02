@@ -1,4 +1,4 @@
-## 収集したデータをDatadog上で確認
+## Datadog上で送信データの確認
 
 ### Infrastructure List
 

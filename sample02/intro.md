@@ -5,6 +5,8 @@ Datadogは、Infrastructureのメトリクス、APM、ログなどを1つのプ�
 本コースでは以下の基本的なDatadogのセットアップ方法を学びます。</br>
 事前準備: Datadogのアカウント作成済みなこと。
 
-1. Agentのインストール (インフラメトリクスの収集)
-2. APM設定
-3. ログ送信
+1. Agentのインストール
+2. Agentの操作
+3. APMのセットアップ（Python）
+4. ログの送信
+5. Datadog上で送信データの確認
