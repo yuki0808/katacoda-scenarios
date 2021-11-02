@@ -11,6 +11,9 @@
 
 ![](https://p-qkfgo2.t2.n0.cdn.getcloudapp.com/items/ApuEkgYn/17bc9db9-1b82-4501-8bfb-d696cd7e83ff.jpg?v=477f5b839d8469946eae8e17a054a560)
 
+```
+logs_enabled: true
+```
 
 送信対象ログの情報を記載したコンフィグファイルを作成する。
 
@@ -33,3 +36,6 @@ logs:
 `sudo datadog-agent status`{{execute}}
 
 ![](https://p-qkfgo2.t2.n0.cdn.getcloudapp.com/items/E0uKnLkE/1284eb63-98d7-4bda-a543-a10bca9a2532.jpg?v=52cad693b901f07f86be6a53a09082f3)
+
+参考資料:
+https://docs.datadoghq.com/logs/log_collection/?tab=host

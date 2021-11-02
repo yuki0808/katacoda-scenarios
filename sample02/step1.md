@@ -18,3 +18,5 @@ https://app.datadoghq.com/account/settings#agent/ubuntu
 
 ![](https://p-qkfgo2.t2.n0.cdn.getcloudapp.com/items/kpu6bWx1/28552f58-8227-4629-a4c7-c812ec74be74.jpg?v=958ab6759aef72752ddfb2dd0bcc81c3)
 
+参考資料:
+https://docs.datadoghq.com/getting_started/agent/

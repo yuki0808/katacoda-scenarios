@@ -13,7 +13,12 @@ Agentが正しく実行されているか以下のコマンドをTerminalで実�
 
 ![](https://p-qkfgo2.t2.n0.cdn.getcloudapp.com/items/7KuALjxe/46ddd4f7-27c0-4b86-86f9-5bd7859f82c9.jpg?v=abbc9a0dae56a83d34d3327e36c9fbd6)
 
-以下例では、`env:test`といった環境用のタグを追加。
+`env:test`環境用のタグを追加。
+
+```
+tags:
+  - env:dev
+```
 
 ![](https://p-qkfgo2.t2.n0.cdn.getcloudapp.com/items/WnukJ6Zq/5e42526c-92cd-4145-b970-cd46973dfbe7.jpg?v=757b9cda1111cb0beab6c085f8e3f74f)
 
@@ -26,3 +31,6 @@ Datadogの以下の画面(Host map)にアクセスしAgentをインストール�
 https://app.datadoghq.com/infrastructure/map
 
 ![](https://p-qkfgo2.t2.n0.cdn.getcloudapp.com/items/RBuEOBXB/23e0ccd8-b128-4429-bf06-40c1da1f5549.jpg?v=d2d9cffe60ecd06af24b3364f13a7668)
+
+参考資料:
+https://docs.datadoghq.com/agent/basic_agent_usage/?tab=agentv6v7

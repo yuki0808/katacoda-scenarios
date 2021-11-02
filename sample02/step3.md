@@ -1,42 +1,19 @@
 ## APMのセットアップ（Python）
 
-以下コマンドを実行し、Flaskモジュールをインストール。
+以下コマンドを実行し、Flaskモジュールとロガーをインストール。
 `pip install flask`{{execute}}
 
-以下コマンドを実行し、Pythonファイルを作成
-`touch run.py`{{execute}}
+`pip install python-json-logger`{{execute}}
 
-作成した上記ファイルをKatakoda Editorから選択し以下の内容を貼り付けて保存する。
+以下コマンドを実行して、Flaskのサンプルアプリをダウンロード。
 
-```
-from flask import Flask
-import logging
-import logging.handlers
+`git clone https://github.com/yuki0808/flask-sample.git`{{execute}}
 
-app = Flask(__name__)
-
-handler = logging.handlers.RotatingFileHandler(
-        '/var/log/log.txt',
-        maxBytes=1024 * 1024)
-logging.getLogger('werkzeug').setLevel(logging.DEBUG)
-logging.getLogger('werkzeug').addHandler(handler)
-app.logger.setLevel(logging.WARNING)
-app.logger.addHandler(handler) 
-
-
-@app.route('/')
-def hello_world():
-    return '<html><body><h1>Hello world!</h1></body></html>'
- 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
-```
-
-Tracerをインストール
+DatadogのTracerをインストール
 `pip install ddtrace`{{execute}}
 
 Webアプリケーションの起動
-`ddtrace-run /usr/bin/python3 run.py`{{execute}}
+`ddtrace-run /usr/bin/python3 /root/flask-sample/run.py`{{execute}}
 
 Terminalの+ボタンを押下し、`Select port to view on Host 1`を選択
 
@@ -46,3 +23,7 @@ Terminalの+ボタンを押下し、`Select port to view on Host 1`を選択
 新しく開かれたBrowserの画面でポート番号`8080`を入力し`Display Port`を押下。
 
 ![](https://p-qkfgo2.t2.n0.cdn.getcloudapp.com/items/kpunnyvE/a93e138e-5b43-4453-8188-cac38d305312.jpg?v=d14ea1a84f62b784f03238b9abab643c)
+
+参考資料:
+https://docs.datadoghq.com/tracing/setup_overview/setup/python/?tab=containers
+https://docs.datadoghq.com/tracing/connect_logs_and_traces/python/
