@@ -1,6 +1,6 @@
 ## APMのセットアップ（Python）
 
-以下コマンドを実行し、Flaskモジュールとロガーをインストール。
+以下コマンドを実行し、FlaskとJSONロガーをインストール。
 `pip install flask`{{execute}}
 
 `pip install python-json-logger`{{execute}}
