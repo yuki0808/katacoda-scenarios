@@ -17,7 +17,7 @@ Agentが正しく実行されているか以下のコマンドをTerminalで実�
 
 ```
 tags:
-  - env:dev
+  - env:test
 ```
 
 ![](https://p-qkfgo2.t2.n0.cdn.getcloudapp.com/items/WnukJ6Zq/5e42526c-92cd-4145-b970-cd46973dfbe7.jpg?v=757b9cda1111cb0beab6c085f8e3f74f)
