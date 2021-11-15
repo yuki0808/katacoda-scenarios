@@ -7,13 +7,13 @@
 
 以下コマンドを実行して、Flaskのサンプルアプリをダウンロード。
 
-`git clone https://github.com/yuki0808/flask-sample.git`{{execute}}
+`git clone https://github.com/yuki0808/flasqlite-sample.git`{{execute}}
 
 DatadogのTracerをインストール
 `pip install ddtrace`{{execute}}
 
 Webアプリケーションの起動
-`ddtrace-run /usr/bin/python3 /root/flask-sample/run.py`{{execute}}
+`ddtrace-run /usr/bin/python3 /root/flasqlite-sample/run.py`{{execute}}
 
 Terminalの+ボタンを押下し、`Select port to view on Host 1`を選択
 
