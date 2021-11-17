@@ -9,11 +9,13 @@
 
 `git clone https://github.com/yuki0808/flasqlite-sample.git`{{execute}}
 
-DatadogのTracerをインストール
+DatadogのTracerをインストール
 `pip install ddtrace`{{execute}}
 
 Webアプリケーションの起動
-`ddtrace-run /usr/bin/python3 /root/flasqlite-sample/run.py`{{execute}}
+`cd /root/flasqlite-sample`{{execute}}
+
+`ddtrace-run /usr/bin/python3 run.py`{{execute}}
 
 Terminalの+ボタンを押下し、`Select port to view on Host 1`を選択
 
