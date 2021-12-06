@@ -15,7 +15,7 @@ DatadogのTracerをインストール
 Webアプリケーションの起動
 `cd /root/flasqlite-sample`{{execute}}
 
-`ddtrace-run /usr/bin/python3 run.py`{{execute}}
+`DD_SERVICE=flask ddtrace-run /usr/bin/python3 run.py`{{execute}}
 
 Terminalの+ボタンを押下し、`Select port to view on Host 1`を選択
 
